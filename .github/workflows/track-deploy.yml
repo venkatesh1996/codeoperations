@@ -21,8 +21,5 @@ jobs:
     - name: Run container (deployment simulation)
       run: docker run -d --name codeoperations -p 8080:80 codeoperations:latest
       
-    - name: Run container
-      run: docker run --rm codeoperations:latest
-      
     - name: Check Container list for verification
       run: docker ps -a
