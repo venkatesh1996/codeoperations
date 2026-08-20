@@ -10,7 +10,7 @@
             for (int i=0; i < n; i++)
             {
                 Console.WriteLine($"Iteration {i + 1}");
-            })
+            }
             Console.WriteLine("Ending Program");
         }
     }
