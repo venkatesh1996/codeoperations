@@ -18,7 +18,7 @@ jobs:
       run: docker build -t codeoperations:latest ./codeoperations/Dockerfile 
 
     - name: Run container (deployment simulation)
-      run: docker run -d --name sampledeploy -p 8080:80 sampledeploy:latest
+      run: docker run -d --name codeoperations -p 8080:80 codeoperations:latest
       
     - name: Run container
       run: docker run --rm codeoperations:latest
